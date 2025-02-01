@@ -27,12 +27,22 @@
   --visual-color: hsl(234, 85%, 45%);
 }
 
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype supports wght');
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+}
+
 body {
-  font-family: var(--font-family);
+  font-family: 'Hanken Grotesk', sans-serif; 
+  font-weight: 500; 
   font-size: 18px;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   min-height: 100vh;
   margin: 0;
   background-color: var(--pale-blue);
