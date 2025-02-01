@@ -5,7 +5,7 @@
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
 
-  /* Gradienți */
+  /* Gradienti */
   --light-slate-blue: hsl(252, 100%, 67%);
   --light-royal-blue: hsl(241, 81%, 54%);
   --violet-blue: hsla(256, 72%, 46%, 1);
@@ -31,18 +31,19 @@ body {
   font-family: var(--font-family);
   font-size: 18px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   min-height: 100vh;
   margin: 0;
   background-color: var(--pale-blue);
+  flex-direction: column;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   max-width: 900px;
-  margin: 50px auto;
+  margin: auto;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
   background-color: var(--white);
   border-radius: 20px;
@@ -123,7 +124,7 @@ body {
   align-items: center;
   padding: 20px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -163,10 +164,77 @@ body {
   color: var(--white);
   padding: 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: 700;
   font-size: 20px;
   margin-top: 30px;
   width: 100%;
+}
+
+.continue-button:hover {
+  background-color: hsl(220, 80%, 60%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .result {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0 0 20px 20px;;
+  }
+
+  .container {
+    background-color: var(--white);
+  }
+  
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+  }
+
+  .score {
+    font-size: 56px;
+  }
+
+  .summary {
+    width: 90%;
+    padding: 5%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .summary-item {
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .summary-item.reaction {
+    background-color: hsl(0, 100%, 95%);
+    color: var(--reaction-color);
+    align-items: center;
+  }
+
+  .continue-button {
+    padding: 15px;
+    font-size: 18px;
+    padding: 15px;
+  }
 }
