@@ -12,12 +12,7 @@
     background-attachment: fixed;
     margin: 20px;
     padding: 0;
-    /* box-sizing: border-box; */
-    background-position: top center;
-  }
-
-  .main-state {
-    background-color: #ffffff; 
+    box-sizing: border-box;
   }
   
   header {
@@ -48,6 +43,9 @@
     height: 40px; /* Adjust as needed */
   }
   
+  .main-state{
+    background-color: white;
+  }
   nav button {
     background-color: white;
     color: var(--neutral-color);
