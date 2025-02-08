@@ -1,0 +1,209 @@
+/* style.css */
+:root {
+    --primary-color: hsl(322, 100%, 66%);
+    --neutral-color: hsl(207, 26%, 17%);
+  }
+  
+  body {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: sans-serif;
+    background-attachment: fixed;
+    margin: 20px;
+    padding: 0;
+    /* box-sizing: border-box; */
+    background-position: top center;
+  }
+
+  .main-state {
+    background-color: #ffffff; 
+  }
+  
+  header {
+    padding: 20px;
+  }
+
+  .header-hero button{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 30px 80px;
+    padding: 15px 50px; 
+    font-size: 16px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; 
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  nav button {
+    background-color: white;
+    color: var(--neutral-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin-bottom: 40px; /* Space between text and image */
+  }
+  
+  .hero img {
+    max-width: 100%;
+  }
+
+  .hero button {
+    background-color: #ff69b4; /* Roz aprins */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Spațiere */
+    font-size: 16px; /* Mărime text */
+    border-radius: 20px; /* Rotunjire colțuri */
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Umbră subtilă */
+    transition: background-color 0.3s ease; /* Tranziție la hover */
+  }
+  
+  .hero button:hover {
+    background-color: #ff508f; /* Roz mai închis la hover */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Umbră mai puternică la hover */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .feature.reverse {
+    flex-direction: column-reverse; /* Reverse order on smaller screens */
+  }
+  
+  .feature-content {
+    margin: 0 20px; /* Add some margin for larger screens */
+  }
+  
+  .cta {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cta button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: var(--neutral-color);
+    color: white;
+    padding: 40px;
+    text-align: center; /* Center the text */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: flex-start; /* Align items to the start on larger screens */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between content and copyright */
+  }
+  
+  .footer-content img {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .contact, .links, .social {
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .hero-content {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  
+    .feature {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .feature.reverse {
+      flex-direction: row-reverse;
+    }
+  
+    .feature-content {
+      margin: 0 40px;
+    }
+  
+    .footer-content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .contact, .links, .social {
+      margin-bottom: 20px; /* Space between sections */
+    }
+  }
